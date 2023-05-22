@@ -8,7 +8,7 @@ createApp({
             tasks: [
                 { text: "Fare la spesa", done: false },
                 { text: "Pulire la camera", done: true },
-                { text: "Studiare per l'esame", done: false },
+                { text: "Studiare per l'esame", done: true },
                 { text: "Chiamare l'idraulico", done: false }
             ],
           
@@ -17,7 +17,8 @@ createApp({
 
     methods: {
         addTask() {
-            console.log(this.newTask);
+            this.tasks.push({ text: this.newTask, done: false });
+            this.newTask = ``;
         }
     },
     

@@ -16,7 +16,7 @@
             </div>
             <div id="tasks-container">
                 <ul>
-                    <li v-for="task in tasks" class="task">
+                    <li v-for="task in tasks" class="task" :class="{ 'done': task.done }">
                         {{task.text}}
                     </li>
                 </ul>
