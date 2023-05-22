@@ -10,6 +10,17 @@
     <body>
 	
         <div id="app">
+            <div id="input-container">
+                <input v-model="newTask" id="new-task-input" type="text" placeholder="Aggiungi una nuova mansione">
+                <button @click="addTask" id="new-task-button">Aggiungi</button>
+            </div>
+            <div id="tasks-container">
+                <ul>
+                    <li v-for="text in tasks">
+                        {{text}}
+                    </li>
+                </ul>
+            </div>
             
         </div>
 
