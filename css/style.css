@@ -33,4 +33,10 @@
     transform: scale(0.95);
 }
 
-
+.task{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 3px 20%;
+    list-style: none;
+}

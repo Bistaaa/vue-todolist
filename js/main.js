@@ -17,7 +17,7 @@ createApp({
 
     methods: {
         addTask() {
-            
+            console.log(this.newTask);
         }
     },
     
